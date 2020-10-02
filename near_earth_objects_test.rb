@@ -11,7 +11,6 @@ class NearEarthObjectsTest < Minitest::Test
 
   def test_get_list_data
     date = '2019-03-30'
-    require "pry"; binding.pry
 
     asteroids_list_data = get_list_data(date)
 

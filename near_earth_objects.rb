@@ -46,7 +46,6 @@ class NearEarthObjects
   end
 
   def self.get_largest_asteroid_diameter(parsed_asteroids_data)
-    # require "pry"; binding.pry
     parsed_asteroids_data.map do |astroid|
       astroid[:estimated_diameter][:feet][:estimated_diameter_max].to_i
     end.max { |a,b| a<=> b}
